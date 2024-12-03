@@ -14,12 +14,17 @@ document.addEventListener("keydown",(event)=>{
 })
 
 let checkDead = setInterval( function(){
-    let charTop = window.getComputedStyle(char).getPropertyValue("top");
-    let objTop = window.getComputedStyle(obj).getPropertyPriority("top");
-    let charBottom = window.getComputedStyle(char).getPropertyValue("bottom");
-    let objBottom = window.getComputedStyle(obj).getPropertyPriority("Bottom");
+    let charTop = parseInt(window.getComputedStyle(char).getPropertyValue("top"));
+    let objLeft = parseInt(window.getComputedStyle(obj).getPropertyValue("left"));
 
-    if(charTop < objTop && charBottom > objBottom ){
-        console.log("collision detected");
+
+        console.log(charTop,objLeft);
+    if(charTop > 30 && objLeft > 240 && objLeft < 270){
+        alert("Collission detected");
+        window.onload();
+    }else{
+        console.log("nothing");
     }
+
+    
 },10);
