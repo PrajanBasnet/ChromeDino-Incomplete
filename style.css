@@ -1,0 +1,53 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#main{
+    padding: 60px;
+    border: 1px solid black;
+}
+
+.char {
+    height: 60px;
+    width: 40px;
+    background-color: red;
+    position: relative;
+    top: 60px;
+    left: 170px;
+}
+ .object{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 150px;
+    background-color: green;
+    right: 10px;
+    z-index: 1;
+    animation-duration: 4s;
+    animation-name: object;
+    animation-duration: alternate;
+    animation-iteration-count: infinite;
+    
+
+}
+.active{
+    animation: jump 0.6s infinite ;
+
+}
+
+@keyframes object{
+    from {
+       right: 0%;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes jump{
+    from{
+        top: 60px;
+    }
+    to{
+        top: 0px;
+    }
+}
