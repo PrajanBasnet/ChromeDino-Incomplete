@@ -7,33 +7,30 @@
     border: 1px solid black;
 }
 
-.char {
-    height: 60px;
+.char{
+    height: 50px;
     width: 40px;
-    background-color: red;
     position: relative;
-    top: 60px;
+    top: 70px;
     left: 170px;
 }
+
  .object{
     height: 30px;
     width: 30px;
     position: absolute;
     top: 150px;
-    background-color: green;
     right: 10px;
     z-index: 1;
-    animation-duration: 4s;
-    animation-name: object;
-    animation-duration: alternate;
-    animation-iteration-count: infinite;
+    animation: object 9s infinite;
     
-
 }
 .active{
     animation: jump 0.6s infinite ;
 
 }
+
+
 
 @keyframes object{
     from {
@@ -50,4 +47,13 @@
     to{
         top: 0px;
     }
+}
+
+img{
+    width: 550px;
+    height: 550px;
+}
+#dino2{
+    visibility: visible;
+    
 }
