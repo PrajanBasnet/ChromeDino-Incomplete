@@ -29,16 +29,16 @@ p{
     top: 150px;
     right: 10px;
     z-index: 1;
-    animation: object 8s infinite;
+    animation: object 8s infinite linear;
     animation-delay: 0ms;
     
 }
 .object:nth-child(2){
-   animation: object 12s infinite;
+   animation: object 10s infinite linear;
 
 }
 .active{
-    animation: jump 0.4s infinite ;
+    animation: jump 0.4s infinite  ;
 
 }
 
